@@ -93,11 +93,11 @@ const Footer = () => {
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://www.tarikozturk.ca/" className="hover:underline">AGEL Aliminyum</a>. All Rights Reserved.
-          </span>
+          <p className="text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://www.tarikozturk.ca/" className="hover:underline">AGEL Aliminyum</a>. All Rights Reserved.
+          </p>
 
-          <span className="text-sm text-gray-500 sm:text-center ">Created by <a href="https://www.tarikozturk.ca/" className="hover:underline">Tarik Ozturk</a>.
-          </span>
+          <p className="text-sm text-gray-500 sm:text-center ">Created by <a href="https://www.tarikozturk.ca/" className="hover:underline">Tarik Ozturk</a>.
+          </p>
       </div>
     </div>
 </footer>
