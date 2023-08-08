@@ -14,6 +14,10 @@ const Slideshow = () => {
 		"images/image3.png"
 	];
 
+
+    // alternative carousel link:
+    // https://tailwind-elements.com/docs/standard/components/carousel/
+
 	//These are custom properties for zoom effect while slide-show
 	const zoomInProperties = {
 		scale: 0.9,
