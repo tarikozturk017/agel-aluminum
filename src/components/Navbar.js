@@ -6,12 +6,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="">
+      <nav className="mt-1 mb-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="  flex-shrink-0">
-                Agel Logo
+                <img className=" w-12 md:w-16" src="https://cdn-icons-png.flaticon.com/512/1209/1209950.png?w=900&t=st=1691539831~exp=1691540431~hmac=77b98c09314a67826b01defdfa2f3e2627304f060f7fd263081c9e62b04bcc77" alt="" />
               </div>
             </div>
             <div className="-mr-2 flex items-center space-x-4">
@@ -32,13 +32,13 @@ const Navbar = () => {
                   href="#"
                   className="text-gray-900  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium transition-colors"
                 >
-                  Kurumsal
+                  Hakkımızda
                 </a>
                 <a
                   href="#"
                   className="text-gray-900  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium transition-colors"
                 >
-                  Blog
+                  Bize Ulaşın
                 </a>
                 {/* <a
                   href="#"

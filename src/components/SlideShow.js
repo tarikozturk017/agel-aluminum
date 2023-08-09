@@ -2,6 +2,7 @@ import React from "react";
 //These are Third party packages for smooth slideshow
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import SliderItem from "./SliderItem";
 // import { ArrowLeftIcon,ArrowRightIcon } from '@heroicons/react/24/solid'
 
 // import Test from "./Test";
@@ -9,17 +10,17 @@ import "react-slideshow-image/dist/styles.css";
 const Slideshow = () => {
 	//Array of Images
 	const images = [
-		"images/image1.jpg",
-		"images/image2.jpg",
-		"images/image3.jpg",
-		"images/image4.jpg",
-		"images/image5.jpg",
-		"images/image6.jpg",
-		"images/image7.jpg",
-		"images/image8.jpg",
-		"images/image9.jpg",
-		"images/image10.jpg",
-		"images/image11.jpg",		
+		{"src": "images/image1.jpg", "text": "Mükemmelliğe Açılan Kapılar"},
+		{"src": "images/image2.jpg", "text": "Detaylarda Saklı Estetik"},
+		{"src": "images/image3.jpg", "text": "Evinizin İmzası Kapı ve Pencere Detayları"},
+		{"src": "images/image4.jpg", "text": "Pencerenizin Gizli Kahramanları"},
+		{"src": "images/image5.jpg", "text": "Pencerelerde İnce Zevk"},
+		{"src": "images/image6.jpg", "text": "Kapılarınızda ve Pencerelerinizde Ustalık İzleri"},
+		{"src": "images/image7.jpg", "text": "Kapı ve Pencere Aksesuarlarında Güvenilir Adres"},
+		{"src": "images/image8.jpg", "text": "Kapı ve Pencere Aksesuarlarında Eşsiz Çözümler"},
+		{"src": "images/image9.jpg", "text": ""},
+		{"src": "images/image10.jpg", "text": ""},
+		{"src": "images/image11.jpg", "text": ""},
 	];
 
 
@@ -47,15 +48,17 @@ const Slideshow = () => {
 	return (
 		<div className="w-full h-screen">
 			<Zoom {...zoomInProperties}>
-				{images.map((each, index) => (
-					<div key={index} className="flex justify-center md:items-center items-start w-screen h-[42rem] relative">
-						<img
-							className="w-4/5"
-							src={each}
-						/>
-                        <h1 className="absolute md:top-60 top-24 inset-x-1/4 text-center z-10 md:text-6xl text-4xl bold text-white">Ben AG7</h1>
-                        <p className="absolute md:top-80 top-40 inset-x-1/4 text-center z-10 md:text-2xl text-xl bold text-white">"Ağır taştır altında kalırsın."</p>
-					</div>
+				{images.map((item, index) => (
+					// <div key={index} className="flex justify-center md:items-center items-start w-screen h-[42rem] relative">
+					// 	<img
+					// 		className="w-4/5"
+					// 		src={each}
+					// 	/>
+                    //     <h1 className="absolute md:top-60 top-24 inset-x-1/4 text-center z-10 md:text-6xl text-4xl bold text-white">Ben AG7</h1>
+                    //     <p className="absolute md:top-80 top-40 inset-x-1/4 text-center z-10 md:text-2xl text-xl bold text-white">"Ağır taştır altında kalırsın."</p>
+					// </div>
+
+					<SliderItem key={index} image={item.src} text={item.text}/>
 				))}
                 {/* <Test text={'test component1'}/>
                 <Test text={'test component2'}/>
