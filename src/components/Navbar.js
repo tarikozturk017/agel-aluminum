@@ -117,30 +117,38 @@ const Navbar = () => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#"
+                <Link
+                  to="anasayfa" // Replace with the actual ID of your section
+                  smooth={true}
+                  duration={500}
                   className="hover:text-blue-500  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Anasayfa
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="urunler" // Replace with the actual ID of your section
+                  smooth={true}
+                  duration={500}
                   className="text-gray-900  hover:text-blue-500 hover: block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Ürünler
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="about" // Replace with the actual ID of your section
+                  smooth={true}
+                  duration={500}
                   className="text-gray-900  hover:text-blue-500 hover: block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Kurumsal
-                </a>
-                <a
-                  href="#"
+                  Hakkımızda
+                </Link>
+                <Link
+                  to="iletisim" // Replace with the actual ID of your section
+                  smooth={true}
+                  duration={500}
                   className="text-gray-900  hover:text-blue-500 hover: block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Blog
-                </a>
+                  Bize Ulaşın
+                </Link>
               </div>
             </div>
           )}
