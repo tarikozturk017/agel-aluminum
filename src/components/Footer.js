@@ -8,9 +8,9 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
               <a href="https://flowbite.com/" className="flex items-center mb-8">
                   <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" />
-                  <span className="self-center text-2xl font-semibold whitespace-nowrap ">AGEL Aluminum</span>
+                  <span className="self-center text-xl font-semibold whitespace-nowrap ">AGEL Aluminum</span>
               </a>
-
+            <p className="text-gray-400  text-sm underline mb-2">Sosyal Medya</p>
               <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
               <a href="#" className="text-gray-500 hover:text-gray-900 ">
                   <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
@@ -57,7 +57,10 @@ const Footer = () => {
                           <a href="https://tailwindcss.com/" className="hover:underline">Kapı Sistemleri</a>
                       </li>
                       <li className="mb-4">
-                          <a href="https://tailwindcss.com/" className="hover:underline">Sürme Sistemleri</a>
+                          <a href="https://tailwindcss.com/" className="hover:underline">Pencere Aksesuarları</a>
+                      </li>
+                      <li className="mb-4">
+                          <a href="https://tailwindcss.com/" className="hover:underline">Kapı Aksesuarları</a>
                       </li>
                   </ul>
               </div>
