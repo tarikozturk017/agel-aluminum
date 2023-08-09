@@ -2,7 +2,7 @@ import React from "react";
 
 const Products = () => {
     return (
-        <div className="pb-16 md:w-4/5 w-full mt-8 md:mt-0 m-auto">
+        <div id="urunler" className="pb-16 md:w-4/5 w-full mt-8 md:mt-0 m-auto">
             <div className="flex justify-center items-center">
                 <div className="2xl:mx-auto 2xl:container py-12 px-4 sm:px-6 xl:px-20 2xl:px-0 w-full">
                     <div className="flex flex-col justify-center items-center space-y-10">

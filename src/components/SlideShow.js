@@ -30,7 +30,7 @@ const Slideshow = () => {
 	//These are custom properties for zoom effect while slide-show
 	const zoomInProperties = {
 		scale: 0.9,
-		duration: 3000,
+		duration: 4000,
 		transitionDuration: 900,
 		infinite: true,
         easing: "ease",
@@ -46,7 +46,7 @@ const Slideshow = () => {
 		),
 	};
 	return (
-		<div className="w-full md:h-screen h-fit">
+		<div id="anasayfa" className="w-full md:h-screen h-fit">
 			<Zoom {...zoomInProperties}>
 				{images.map((item, index) => (
 					// <div key={index} className="flex justify-center md:items-center items-start w-screen h-[42rem] relative">

@@ -1,6 +1,7 @@
-"use client"
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { Link } from "react-scroll";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,30 +17,41 @@ const Navbar = () => {
             </div>
             <div className="-mr-2 flex items-center space-x-4">
               <div className="hidden md:flex items-center space-x-4">
-                <a
-                  href="#"
-                  className=" hover:text-blue-500 text-gray-900 px-3 py-2 rounded-md text-lg font-medium transition-colors"
+                
+                <Link
+                  to="anasayfa" // Replace with the actual ID of your section
+                  smooth={true}
+                  duration={500}
+                  className="hover:cursor-pointer text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition-colors"
                 >
                   Anasayfa
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-900  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium transition-colors"
+                </Link>
+                <Link
+                  to="urunler" // Replace with the actual ID of your section
+                  smooth={true}
+                  duration={500}
+                  className="hover:cursor-pointer text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition-colors"
                 >
                   Ürünler
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-900  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium transition-colors"
+                </Link>
+                
+                <Link
+                  to="about" // Replace with the actual ID of your section
+                  smooth={true}
+                  duration={500}
+                  className="hover:cursor-pointer text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition-colors"
                 >
                   Hakkımızda
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-900  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium transition-colors"
+                </Link>
+                <Link
+                  to="iletisim" // Replace with the actual ID of your section
+                  smooth={true}
+                  duration={500}
+                  className="hover:cursor-pointer text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition-colors"
                 >
                   Bize Ulaşın
-                </a>
+                </Link>
+                
                 {/* <a
                   href="#"
                   className="text-gray-900  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium"
