@@ -21,7 +21,7 @@ const About = () => {
                         <p className="mt-4 text-lg text-gray-600">
                             <a
                                 href="#"
-                                className="text-blue-500 hover:underline"
+                                className=" text-blue-900/60 hover:text-blue-gray-500 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                                 onClick={toggleFullContent}
                             >
                                 Devamını okumak için lütfen tıklayınız.

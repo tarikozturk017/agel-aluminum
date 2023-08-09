@@ -7,22 +7,24 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="mt-1 mb-4">
+      <nav className="mt-4 mb-4 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <div className="  flex-shrink-0">
-                <img className=" w-12 md:w-16" src="https://cdn-icons-png.flaticon.com/512/1209/1209950.png?w=900&t=st=1691539831~exp=1691540431~hmac=77b98c09314a67826b01defdfa2f3e2627304f060f7fd263081c9e62b04bcc77" alt="" />
+              <div className=" flex flex-shrink-0">
+                <img className=" w-12 md:w-16 rounded-full" src="images/logo.jpg" alt="agel logo" />
+                <p className=" my-auto font-bold ml-4 text-xl">AGEL Alüminyum</p>
               </div>
             </div>
             <div className="-mr-2 flex items-center space-x-4">
-              <div className="hidden md:flex items-center space-x-4">
+              <div className="hidden md:flex items-center space-x-2">
                 
                 <Link
                   to="anasayfa" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className="hover:cursor-pointer text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition-colors"
+                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md  font-medium transition-colors"
                 >
                   Anasayfa
                 </Link>
@@ -30,7 +32,8 @@ const Navbar = () => {
                   to="urunler" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className="hover:cursor-pointer text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition-colors"
+                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md  font-medium transition-colors"                
                 >
                   Ürünler
                 </Link>
@@ -39,7 +42,8 @@ const Navbar = () => {
                   to="about" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className="hover:cursor-pointer text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition-colors"
+                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md  font-medium transition-colors"
                 >
                   Hakkımızda
                 </Link>
@@ -47,7 +51,8 @@ const Navbar = () => {
                   to="iletisim" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className="hover:cursor-pointer text-gray-900 hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition-colors"
+                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md  font-medium transition-colors"
                 >
                   Bize Ulaşın
                 </Link>
