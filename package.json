@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.22.10",
+    "@headlessui/react": "^1.7.16",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.13",
     "next": "13.4.13",
