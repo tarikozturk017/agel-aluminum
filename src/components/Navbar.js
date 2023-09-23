@@ -2,29 +2,34 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <nav className="mt-4 mb-4 ">
+    <div className=" bg-gradient-to-tr from-gray-950  via-gray-900 to-black">
+      {/* <nav className="mt-4 mb-4 "> */}
+      <nav className="pt-4 pb-4 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className=" flex flex-shrink-0">
-                <img className=" w-12 md:w-16 rounded-full" src="images/logo.jpg" alt="agel logo" />
-                <p className=" my-auto font-bold ml-4 text-xl">AGEL Alüminyum</p>
+                <img
+                  className=" w-12 md:w-16 shadow-2xl shadow-gray-400 rounded-full"
+                  src="images/logo.jpg"
+                  alt="agel logo"
+                />
+                <p className=" my-auto text-gray-200 font-bold ml-4 text-xl">
+                  AGEL Alüminyum
+                </p>
               </div>
             </div>
             <div className="-mr-2 flex items-center space-x-4">
               <div className="hidden md:flex items-center space-x-2">
-                
                 <Link
                   to="anasayfa" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
-                  hover:cursor-pointer text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md  font-medium transition-colors"
+                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-3 py-2 rounded-md  font-medium transition-colors"
                 >
                   Anasayfa
                 </Link>
@@ -32,18 +37,18 @@ const Navbar = () => {
                   to="urunler" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
-                  hover:cursor-pointer text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md  font-medium transition-colors"                
+                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-3 py-2 rounded-md  font-medium transition-colors"
                 >
                   Ürünler
                 </Link>
-                
+
                 <Link
                   to="about" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
-                  hover:cursor-pointer text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md  font-medium transition-colors"
+                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-3 py-2 rounded-md  font-medium transition-colors"
                 >
                   Hakkımızda
                 </Link>
@@ -51,15 +56,15 @@ const Navbar = () => {
                   to="iletisim" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
-                  hover:cursor-pointer text-gray-900 hover:text-gray-600 px-3 py-2 rounded-md  font-medium transition-colors"
+                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-3 py-2 rounded-md  font-medium transition-colors"
                 >
                   Bize Ulaşın
                 </Link>
-                
+
                 {/* <a
                   href="#"
-                  className="text-gray-900  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-gray-200  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Reports
                 </a> */}
@@ -126,7 +131,7 @@ const Navbar = () => {
                   to="anasayfa" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className="hover:text-blue-500  block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-200 hover:text-red-700  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Anasayfa
                 </Link>
@@ -134,7 +139,7 @@ const Navbar = () => {
                   to="urunler" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className="text-gray-900  hover:text-blue-500 hover: block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-200  hover:text-red-700 hover: block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Ürünler
                 </Link>
@@ -142,7 +147,7 @@ const Navbar = () => {
                   to="about" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className="text-gray-900  hover:text-blue-500 hover: block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-200  hover:text-red-700 hover: block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Hakkımızda
                 </Link>
@@ -150,7 +155,7 @@ const Navbar = () => {
                   to="iletisim" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
-                  className="text-gray-900  hover:text-blue-500 hover: block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-200  hover:text-red-700 hover: block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Bize Ulaşın
                 </Link>

@@ -2,9 +2,9 @@ import React from "react";
 
 const SliderItem = ({ image, text }) => {
   return (
-    <div className="flex justify-center md:items-center items-start w-screen md:h-[42rem] md:mb-16 h-fit relative">
+    <div className=" flex justify-center md:items-center items-start w-screen md:h-[42rem] md:mb-16 h-fit relative">
       <img
-        className="md:w-4/5 w-11/12 md:h-auto h-[30rem] object-cover"
+        className="w-full md:h-auto h-[30rem] object-cover"
         src={image}
         alt="Slider Image"
       />
