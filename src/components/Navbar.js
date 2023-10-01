@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+import LinkNavbar from "./LinkNavbar";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  // if (pathname) console.log(`current route: ${pathname}`);
+
   return (
     <div className=" bg-gradient-to-tr from-gray-950  via-gray-900 to-black">
       {/* <nav className="mt-4 mb-4 "> */}
@@ -17,14 +24,15 @@ const Navbar = () => {
                   src="images/logo.jpg"
                   alt="agel logo"
                 />
-                <p className=" my-auto text-gray-200 font-bold ml-4 text-xl">
+                <p className=" my-auto text-gray-200 font-bold ml-4 text-lg">
                   AGEL Alüminyum
                 </p>
               </div>
             </div>
             <div className="-mr-2 flex items-center space-x-4">
               <div className="hidden md:flex items-center space-x-2">
-                <Link
+                <LinkNavbar />
+                {/* <Link
                   to="anasayfa" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
@@ -32,42 +40,29 @@ const Navbar = () => {
                   hover:cursor-pointer text-gray-200 hover:text-red-700 px-3 py-2 rounded-md  font-medium transition-colors"
                 >
                   Anasayfa
-                </Link>
-                <Link
-                  to="urunler" // Replace with the actual ID of your section
-                  smooth={true}
-                  duration={500}
-                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
-                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-3 py-2 rounded-md  font-medium transition-colors"
-                >
-                  Ürünler
-                </Link>
-
-                <Link
-                  to="about" // Replace with the actual ID of your section
-                  smooth={true}
-                  duration={500}
-                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
-                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-3 py-2 rounded-md  font-medium transition-colors"
-                >
-                  Hakkımızda
-                </Link>
-                <Link
-                  to="iletisim" // Replace with the actual ID of your section
-                  smooth={true}
-                  duration={500}
-                  className=" relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
-                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-3 py-2 rounded-md  font-medium transition-colors"
-                >
-                  Bize Ulaşın
-                </Link>
-
-                {/* <a
-                  href="#"
-                  className="text-gray-200  hover:text-blue-500 hover: px-3 py-2 rounded-md text-lg font-medium"
-                >
-                  Reports
-                </a> */}
+                </Link> */}
+                {pathname == "/" && (
+                  <Link
+                    to="urunler" // Replace with the actual ID of your section
+                    smooth={true}
+                    duration={500}
+                    className=" relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-1 lg:px-3  py-2 rounded-md  font-medium transition-colors"
+                  >
+                    Ürünler
+                  </Link>
+                )}
+                {pathname == "/" && (
+                  <Link
+                    to="markalar" // Replace with the actual ID of your section
+                    smooth={true}
+                    duration={500}
+                    className=" relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-800 after:w-full after:scale-x-0 after:hover:scale-x-90 after:transition after:duration-300 after:origin-left
+                  hover:cursor-pointer text-gray-200 hover:text-red-700 px-1 lg:px-3 py-2 rounded-md  font-medium transition-colors"
+                  >
+                    Markalar
+                  </Link>
+                )}
               </div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -127,23 +122,36 @@ const Navbar = () => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link
+                <LinkNavbar />
+                {/* <Link
                   to="anasayfa" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
                   className="text-gray-200 hover:text-red-700  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Anasayfa
-                </Link>
-                <Link
-                  to="urunler" // Replace with the actual ID of your section
-                  smooth={true}
-                  duration={500}
-                  className="text-gray-200  hover:text-red-700 hover: block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Ürünler
-                </Link>
-                <Link
+                </Link> */}
+                {pathname == "/" && (
+                  <Link
+                    to="urunler" // Replace with the actual ID of your section
+                    smooth={true}
+                    duration={500}
+                    className="text-gray-200  hover:text-red-700 hover: block px-1 py-2 rounded-md text-base font-medium"
+                  >
+                    Ürünler
+                  </Link>
+                )}
+                {pathname == "/" && (
+                  <Link
+                    to="markalar" // Replace with the actual ID of your section
+                    smooth={true}
+                    duration={500}
+                    className="text-gray-200  hover:text-red-700 hover: block px-1 py-2 rounded-md text-base font-medium"
+                  >
+                    Markalar
+                  </Link>
+                )}
+                {/* <Link
                   to="about" // Replace with the actual ID of your section
                   smooth={true}
                   duration={500}
@@ -158,7 +166,7 @@ const Navbar = () => {
                   className="text-gray-200  hover:text-red-700 hover: block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Bize Ulaşın
-                </Link>
+                </Link> */}
               </div>
             </div>
           )}

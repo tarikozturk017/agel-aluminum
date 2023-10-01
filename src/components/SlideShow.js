@@ -62,7 +62,7 @@ const Slideshow = () => {
   return (
     <div
       id="anasayfa"
-      className="bg-gradient-to-t from-gray-100 via-slate-200 to-gray-100 w-full md:h-screen h-fit"
+      className=" bg-gradient-to-t from-gray-100 via-slate-200 to-gray-100 w-full md:h-screen h-fit"
     >
       <Zoom {...zoomInProperties} canSwipe autoplay>
         {images.map((item, index) => (
