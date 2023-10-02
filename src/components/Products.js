@@ -1,4 +1,5 @@
 import React from "react";
+import liste from "../../src/pdfs/liste.pdf";
 
 const Products = () => {
   return (
@@ -14,28 +15,11 @@ const Products = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 md:gap-x-8 w-full">
               {/* Product 1 */}
-              <div className="hover:cursor-pointer relative group flex justify-center items-center h-full w-full">
-                <img
-                  className="object-center object-cover h-full w-full transition duration-300 ease-in-out group-hover:opacity-75"
-                  src="images/pencere.jpg"
-                  alt="windows"
-                />
-                <div className="absolute inset-0 flex justify-center items-center hidden group-hover:flex transition duration-300 ease-in-out">
-                  <div className="bg-gray-800 bg-opacity-60 p-4 text-white text-center rounded">
-                    Lütfen katalogu görmek için tıklayınız
-                  </div>
-                </div>
-                <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white rounded p-1">
-                  Pencere Aksesuarları
-                </button>
-              </div>
-
-              {/* Product 2 */}
-              <div className="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
+              <a href={liste} target="_blank" rel="noreferrer">
                 <div className="hover:cursor-pointer relative group flex justify-center items-center h-full w-full">
                   <img
                     className="object-center object-cover h-full w-full transition duration-300 ease-in-out group-hover:opacity-75"
-                    src="images/pencere-sistem.jpg"
+                    src="images/pencere.jpg"
                     alt="windows"
                   />
                   <div className="absolute inset-0 flex justify-center items-center hidden group-hover:flex transition duration-300 ease-in-out">
@@ -44,16 +28,57 @@ const Products = () => {
                     </div>
                   </div>
                   <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white rounded p-1">
-                    Yapı Kimyasalları
+                    Pencere Aksesuarları
                   </button>
                 </div>
+              </a>
 
+              {/* Product 2 */}
+              <div className="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
+                <a href={liste} target="_blank" rel="noreferrer">
+                  <div className="hover:cursor-pointer relative group flex justify-center items-center h-full w-full">
+                    <img
+                      className="object-center object-cover h-full w-full transition duration-300 ease-in-out group-hover:opacity-75"
+                      src="images/sineklik.png"
+                      alt="windows"
+                    />
+                    <div className="absolute inset-0 flex justify-center items-center hidden group-hover:flex transition duration-300 ease-in-out">
+                      <div className="bg-gray-800 bg-opacity-60 p-4 text-white text-center rounded">
+                        Lütfen katalogu görmek için tıklayınız
+                      </div>
+                    </div>
+                    <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white rounded p-1">
+                      Sineklik Sistemleri
+                    </button>
+                  </div>
+                </a>
                 {/* Product 3 */}
-                <div className="hover:cursor-pointer relative group flex justify-center items-center h-full w-full">
+                <a href={liste} target="_blank" rel="noreferrer">
+                  <div className="hover:cursor-pointer relative group flex justify-center items-center h-full w-full">
+                    <img
+                      className="object-center object-cover h-full w-full transition duration-300 ease-in-out group-hover:opacity-75"
+                      src="images/yapi-kimyasal1.png"
+                      alt="doors"
+                    />
+                    <div className="absolute inset-0 flex justify-center items-center hidden group-hover:flex transition duration-300 ease-in-out">
+                      <div className="bg-gray-800 bg-opacity-60 p-4 text-white text-center rounded">
+                        Lütfen katalogu görmek için tıklayınız
+                      </div>
+                    </div>
+                    <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white rounded p-1">
+                      Yapı Kimyasalları
+                    </button>
+                  </div>
+                </a>
+              </div>
+
+              {/* Product 4 */}
+              <a href={liste} target="_blank" rel="noreferrer">
+                <div className="hover:cursor-pointer relative group justify-center items-center h-full w-full hidden lg:flex">
                   <img
                     className="object-center object-cover h-full w-full transition duration-300 ease-in-out group-hover:opacity-75"
-                    src="images/kapi-sistem.jpg"
-                    alt="doors"
+                    src="images/kapi.jpg"
+                    alt="door"
                   />
                   <div className="absolute inset-0 flex justify-center items-center hidden group-hover:flex transition duration-300 ease-in-out">
                     <div className="bg-gray-800 bg-opacity-60 p-4 text-white text-center rounded">
@@ -61,44 +86,28 @@ const Products = () => {
                     </div>
                   </div>
                   <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white rounded p-1">
-                    Sineklik Sistemleri
+                    Kapı Aksesuarları
                   </button>
                 </div>
-              </div>
-
-              {/* Product 4 */}
-              <div className="hover:cursor-pointer relative group justify-center items-center h-full w-full hidden lg:flex">
-                <img
-                  className="object-center object-cover h-full w-full transition duration-300 ease-in-out group-hover:opacity-75"
-                  src="images/kapi.jpg"
-                  alt="door"
-                />
-                <div className="absolute inset-0 flex justify-center items-center hidden group-hover:flex transition duration-300 ease-in-out">
-                  <div className="bg-gray-800 bg-opacity-60 p-4 text-white text-center rounded">
-                    Lütfen katalogu görmek için tıklayınız
-                  </div>
-                </div>
-                <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white rounded p-1">
-                  Kapı Aksesuarları
-                </button>
-              </div>
-
+              </a>
               {/* Product 5 */}
-              <div className="hover:cursor-pointer relative group flex justify-center items-center h-full w-full mt-4 md:hidden md:mt-8 lg:hidden">
-                <img
-                  className="object-center object-cover h-full w-full transition duration-300 ease-in-out group-hover:opacity-75"
-                  src="images/kapi.jpg"
-                  alt="door"
-                />
-                <div className="absolute inset-0 flex justify-center items-center hidden group-hover:flex transition duration-300 ease-in-out">
-                  <div className="bg-gray-800 bg-opacity-60 p-4 text-white text-center rounded">
-                    Lütfen katalogu görmek için tıklayınız
+              <a href={liste} target="_blank" rel="noreferrer">
+                <div className="hover:cursor-pointer relative group flex justify-center items-center h-full w-full mt-4 md:hidden md:mt-8 lg:hidden">
+                  <img
+                    className="object-center object-cover h-full w-full transition duration-300 ease-in-out group-hover:opacity-75"
+                    src="images/kapi.jpg"
+                    alt="door"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center hidden group-hover:flex transition duration-300 ease-in-out">
+                    <div className="bg-gray-800 bg-opacity-60 p-4 text-white text-center rounded">
+                      Lütfen katalogu görmek için tıklayınız
+                    </div>
                   </div>
+                  <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white rounded p-1">
+                    Kapı Aksesuarları
+                  </button>
                 </div>
-                <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white rounded p-1">
-                  Kapı Aksesuarları
-                </button>
-              </div>
+              </a>
             </div>
           </div>
         </div>

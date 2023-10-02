@@ -2,10 +2,12 @@
 import Slideshow from "@/src/components/SlideShow";
 import Products from "@/src/components/Products";
 import Brands from "@/src/components/Brands";
-import Urun from "@/src/components/Urun";
+// import Urun from "@/src/components/Urun";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 // import { useRouter } from "next/navigation";
+// import liste from "../pdfs/liste.pdf";
+// import liste from "../src/pdfs/liste.pdf";
 
 export default function Home() {
   // const router = useRouter();
@@ -53,7 +55,14 @@ export default function Home() {
       >
         <Brands />
       </motion.div>
+      {/* <center>
+        <h1>Welcome to Geeks for Geeks</h1>
+        <h3>Click on below link to open PDF file in new tab</h3>
 
+        <a href={liste} target="_blank" rel="noreferrer">
+          Open PDF
+        </a>
+      </center> */}
       {/* Animate Products component */}
     </main>
   );

@@ -54,12 +54,12 @@ const Footer = () => {
               <ul className="text-gray-300 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Pencere sistemleri
+                    Sineklik sistemleri
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="3" className="hover:underline">
-                    Kapı Sistemleri
+                    Yapı Kimyasalları
                   </a>
                 </li>
                 <li className="mb-4">
