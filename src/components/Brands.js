@@ -6,7 +6,7 @@ const Brands = () => {
     { src: "images/kayapen.png" },
     { src: "images/sinuwa.png" },
     { src: "images/soudal.png" },
-    { src: "images/vorne.png" },
+    // { src: "images/vorne.png" },
   ];
 
   return (
