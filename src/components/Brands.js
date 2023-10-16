@@ -19,7 +19,7 @@ const Brands = () => {
       </h1>
       <div className=" shadow-md shadow-gray-400 rounded-xl p-8">
         <div className=" flex ">
-          <div className=" mx-auto grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-4 md:gap-10 lg:gap-12">
+          <div className=" mx-auto grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-6 md:gap-10 lg:gap-12">
             {images.map((item, index) => (
               // <SliderItem key={index} image={item.src} />
               <div
